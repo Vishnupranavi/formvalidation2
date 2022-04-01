@@ -68,25 +68,17 @@
                 <td id="email"></td>
             </tr>
             <tr>
-                <th><label for="Gender">Gender</label></th>
-                <td id="gender"></td>
-            </tr>
-            <tr>
                 <th><label for="Mobile">Mobile</label></th>
                 <td id="mobile"></td>
-            </tr>
-            <tr>
-                <th><label for="Qualification">Qualification</label></th>
-                <td id="qualify"></td>
             </tr>
         </table>
     </form>
     </body>
     <script>
-        document.getElementById("name").innerHTML="name";
-        document.getElementById("email").innerHTML="vishnu@gmail.com";
-        document.getElementById("gender").innerHTML="female";
-        document.getElementById("mobile").innerHTML="mobile";
-        document.getElementById("qualify").innerHTML="Hsc";
+        document.getElementById("name").textContent=localStorage.getItem('username');
+        document.getElementById("email").innerHTML=x;
+        document.getElementById("mobile").innerHTML=localStorage.getItem('mobile');
+        var x = localStorage.getItem("unname");
+        document.getElementById("box").textContent = 'welcome, ' + x ;
     </script>
 </html>
